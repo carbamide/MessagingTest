@@ -3,7 +3,7 @@
 //  MessagingTest
 //
 //  Created by Barrow, Joshua on 7/14/15.
-//  Copyright © 2015 QuikTrip. All rights reserved.
+//  Copyright © 2015 Jukaela Enterprises. All rights reserved.
 //
 
 import UIKit

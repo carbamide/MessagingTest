@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8077.2"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MessagingTest_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="2GK-XI-n18">
+                            <items>
+                                <button width="0.5" alignment="left" title="UL" id="bQM-Ym-hqn">
+                                    <connections>
+                                        <action selector="upperLeft" destination="AgC-eL-Hgc" id="hmg-sm-yOf"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="UR" id="7v1-kk-M3h">
+                                    <connections>
+                                        <action selector="upperRight" destination="AgC-eL-Hgc" id="jVF-3b-QDh"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="NbE-KS-ySI">
+                            <items>
+                                <button width="0.5" alignment="left" title="LL" id="qw7-fZ-nWL">
+                                    <connections>
+                                        <action selector="lowerLeft" destination="AgC-eL-Hgc" id="vUk-OK-5R9"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="LR" id="UAa-rj-9RH">
+                                    <connections>
+                                        <action selector="lowerRight" destination="AgC-eL-Hgc" id="t4M-8Y-ZzV"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lowerLeftButton" destination="qw7-fZ-nWL" id="V4n-O0-AyH"/>
+                        <outlet property="lowerRightButton" destination="UAa-rj-9RH" id="uTY-N4-3F8"/>
+                        <outlet property="upperLeftButton" destination="bQM-Ym-hqn" id="vgL-an-nQb"/>
+                        <outlet property="upperRightButton" destination="7v1-kk-M3h" id="CVt-Hs-Gib"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
